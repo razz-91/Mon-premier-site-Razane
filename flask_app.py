@@ -29,7 +29,7 @@ def accueil():
     
 @app.get("/bonjour/<prenom>")
 def bonjour(Razz):
-    return f"<h1>Bonjour {Razz} !</h1>"
+    return f"<h1>Bonjour {prenom} !</h1>"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
