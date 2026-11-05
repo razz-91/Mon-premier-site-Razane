@@ -26,8 +26,16 @@ def accueil():
 # ---------------------------------------------------------------
 @app.get("/presentation")
 def presentation():
-    return render_template("presentation.html", prenom="Léa", nom="Martin")
-
+    return """
+    <h1>LRazane KHOMSI </h1>
+    <p>Je suis étudiante en premiere année d'école d'ingénieur </strong>.</p>
+    <h2>Ce que j'aime</h2>
+    <ul>
+        <li>Les bonbons </li>
+        <li>La musique </li>
+        <li>le shopping </li>
+    </ul>
+    """
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
