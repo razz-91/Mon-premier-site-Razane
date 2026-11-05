@@ -28,7 +28,7 @@ def accueil():
     return render_template("accueil.html")
     
 @app.get("/bonjour/<prenom>")
-def bonjour(Razz):
+def bonjour(prenom):
     return f"<h1>Bonjour {prenom} !</h1>"
 
 # ---------------------------------------------------------------
