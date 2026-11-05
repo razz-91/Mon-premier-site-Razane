@@ -23,7 +23,9 @@ def presentation():
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
-
+@app.get("/")
+def accueil():
+    return render_template("accueil.html")
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
