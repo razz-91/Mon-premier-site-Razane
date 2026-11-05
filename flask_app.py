@@ -26,6 +26,9 @@ def presentation():
 @app.get("/")
 def accueil():
     return render_template("accueil.html")
+    @app.get("/bonjour/<prenom>")
+def bonjour(Razz):
+    return f"<h1>Bonjour {Razz} !</h1>"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
